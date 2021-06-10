@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,200;1,100&display=swap" rel="stylesheet"> 
+    <link rel='stylesheet' href="/app/scss/index.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header-wrap">
+        <div class="nav-wrap">
+            <div class="logo-wrap">
+                <a href="/index.html"><img src="assets/images/logo2.png" /></a>
+            </div>
+            <ul>
+                <li><a href="/index.html">Начало</a></li>
+                <li><a href="/services.html">Услуги</a></li>
+                <li><a href="/about.html">За нас</a></li>
+                <li><a href="/contacts.html">Контакти</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="image-wrap">
+        <div class="image-text-wrap">
+            <div>Направете вашият превод на най-ниските цени</div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+    <div id="modal" class="w3-modal">
+        <div class="w3-modal-content">
+        <div class="w3-container">
+            <span onclick="closeModal('Успешно направихте поръчка')" class="w3-button w3-display-topright">&times;</span>
+            <p id="modal-text">Успешно направихте поръчка</p>
+        </div>
+        </div>
+    </div> 
+
+    <div class="flex-center-content-wrap first-section">
+        <div class="content-heading">
+            С какво можем да Ви помогнем
+        </div>
+        <div class="grid-wrap">
+            <div class="grid-cell">
+                <div class="cell-circle">
+                    <img src="./assets/images/circle-one.png" class="cell-image"/>
+                </div>
+                <div class="cell-text">
+                    <p><b>Експертен екип</b> <br/>Над 250 квалифицирани специалисти, професионални преводачи и редактори.</p>
+                </div>
+            </div>
+            <div class="grid-cell">
+                <div class="cell-circle">
+                    <img src="./assets/images/circle-three.png" class="cell-image"/>
+                </div>
+                <div class="cell-text">
+                    <p><b>Безкомпромистно качество</b> <br/>ISO 9001:2000/20.06.2008г. от Bureau Veritas Certification, ISO 9001:2008, БДС EN 15038:2006.</p>
+                </div>
+            </div>
+            <div class="grid-cell">
+                <div class="cell-circle">
+                    <img src="./assets/images/circle-three.png" class="cell-image"/>
+                </div>
+                <div class="cell-text">
+                    <p><b>Бързина и акуратност</b><br/>Предлагаме преводи от и на повече от 40 езика. Експресни поръчки, легализации.</p>
+                </div>
+            </div>
+            <div class="grid-cell">
+                <div class="cell-circle">
+                    <img src="./assets/images/circle-four.png" class="cell-image"/>
+                </div>
+                <div class="cell-text">
+                    <p><b>Множество щастливи клиенти</b> <br/>Клиенти по цял свят ползват нашите предовачески услуги и най-важното е, че ведъж опитвайки от тях, те остават наши редовни клиенти</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="flex-center-content-wrap first-section second-section">
+        <div class="content-heading">
+            Защо да изберете нас
+        </div>
+        <div class="content-paragraph">
+            <p>
+                Благодарение на дългогодишния ни опит в различни индустрии и постоянното ни желание да прилагаме последните иновации,
+                 създадохме наш ефективен метод, чрез който предоставяме на клиентите си качествен и точен превод, съобразен със сроковете и изискванията им.
+                 Ние гарантираме постоянство в превода дори когато текстът е на различни носители – от каталози, уеб сайтове до технически, вътрешнофирмени документи и софтуери. Редактирането от втори лингвист гарантира, че преводът е направен качествено и без грешки.
+            </p>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="flex-center-content-wrap third-section">
+        <div class="content-heading">
+            Опитай нашите услуги
+        </div>
+        <div class="content-paragraph">
+            <p>Ние знаем, че разходите за превод натоварват бюджета ви. От нас ще получите винаги точна оферта. С нашия процес бързо идентифицираме повторенията в текстовете и се стараем да оптимизираме бюджета ви в дългосрочен план.
+            </p>
+        </div>
+        <div class="content-button">
+            <button onclick="openModal()">ПОРЪЧАЙ СЕГА</button>
+        </div>
+    </div>
+
+    <div class="flex-center-content-wrap third-section">
+        <div class="form-wrap">
+            <div class="left-side">
+                <p>Ние знаем, че разходите за превод натоварват бюджета ви. От нас ще получите винаги точна оферта. С нашия процес бързо идентифицираме повторенията в текстовете и се стараем да оптимизираме бюджета ви в дългосрочен план.</p>
+            </div>
+            <div class="right-side">
+                <div class="form-heading">Изпратете ни запитване</div>
+                <div class="form">
+                    <input type="text" placeholder="първо име"/>
+                    <input type="text" placeholder="второ име"/>
+                    <input type="text" placeholder="имейл"/>
+                    <input type="submit" class="submit-button" value="ИЗПРАТИ" onclick="openModal('Направихте запитване')"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-wrap">
+        <div class="footer-grid-wrap">
+            <div class="footer-grid-cell">
+                <ul>
+                    <li class="list-heading"><b>Бързи връзки</b></li>
+                    <li>Писмени преводи</li>
+                    <li>Устни преводи</li>
+                    <li>Заверка и легализация</li>
+                    <li>Коригиране и редактиране</li>
+                </li>
+                </ul>
+            </div>
+            <div class="footer-grid-cell">
+                <ul>
+                    <li class="list-heading"><b>Метод на работа</b></li>
+                    <li>Работен процес</li>
+                    <li>Сертифициране</li>
+                    <li>Нашите клиенти</li>
+                    <li>Референции</li>
+                </ul>
+            </div>
+            <div class="footer-grid-cell">
+                <ul>
+                    <li class="list-heading"><b>Информация</b></li>
+                    <li>Често задавани въпроси</li>
+                    <li>Цени</li>
+                    <li>Общи Условия</li>
+                    <li>Карта на сайта</li>
+                </ul>
+            </div>
+            <div class="footer-grid-cell">
+                <ul>
+                    <li class="list-heading"><b>За връзка с нас</b></li>
+                    <li>office@top-trans.com</li>
+                    <li>
+                        +359 2 954 9988
+                        </li>
+                    <li>Адрес: гр.София, бул. "Ал.Стамболийски" 26, ет.1</li>
+                    <li>аботно време: Пон-Пет 09:30 - 18:00</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright-wrap">
+        <div>Copyright©2021</div>
+    </div>
+
+    <script src="/app/js/script.js"></script>
+</body>
+</html>
